@@ -1,0 +1,128 @@
+/*----- RESET ----*/
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header nav a{
+  text-decoration: 0;
+}
+
+/*---------- VARIAVEIS --------*/
+:root{
+  --vermelho:rgb(229, 9, 20);
+  --preta:rgb(20, 20, 20);
+  --cinza: rgb(170, 170, 170);
+  --branco: rgb(255, 255, 255);
+  --transparent: rgba(0,0,0, .50);
+
+
+
+  font-size: 62.5%; /*equivale a 10px*/
+  /*1REM = 16px que equivale a 100%*/
+
+}
+
+/*-------- FUNDO -----*/
+body{
+  background: var(--preta);
+  font-family: 'Arial', Times, serif;
+  color: var(--branco);
+}
+
+/*----------- LOGO ------*/
+header .logo {
+  margin-left: 0.5rem;
+  color: var(--vermelho);
+  font-family: 'Arial black', times;
+  font-size: 4rem;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+/*----- NAVEGAÇÃO -----*/
+
+
+header nav a {
+  color: var(--cinza);
+  margin-right: 1.8rem;
+  font-size: 1.8rem;
+
+}
+
+
+header nav a:hover{
+  color: var(--branco);
+}
+
+/*------ MANGA PRINCIPAL ----*/
+.container{
+  margin-left: 2.3rem;
+}
+
+.manga-principal .container {
+  width: 70%;
+}
+
+.manga-principal {
+  font-size: 1.6rem;
+
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%,
+  rgba(0, 0, 0, .50) 100%), url('/assets/heroacademia.jpg');
+
+  height: 60rem;
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.manga-principal .description{
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+}
+
+.title {
+  margin-top: 2rem;
+  font-size: 4rem;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  
+}
+.button {
+  background-color: var(--transparent);
+  border: none;
+  color:var(--branco);
+  padding: 1.5rem 3rem;
+  margin-right: 1.5rem;
+  font-size: 1.2rem;
+
+  cursor: pointer;
+transition: 0.2s ease all;
+}
+
+.button:hover{
+  background-color: var(--branco);
+  color: var(--preta);
+}
+
+.button i {
+  margin-right: 0.8rem;
+}
+
+
+/*-------- MANGAS -----*/
+.box-manga{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.box-manga{
+  margin-top: 0.5rem;
+}
